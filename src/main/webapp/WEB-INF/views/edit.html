@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post">
+    <input type="hidden" th:value="${posts.id}">
+    <input type="text" name="title" th:value="${posts.title}">
+    <input type="text" name="content" th:value="${posts.content}">
+    <input type="text" name="likes" th:value="${posts.likes}">
+    <button>Lưu</button>
+</form>
+</body>
+</html>
